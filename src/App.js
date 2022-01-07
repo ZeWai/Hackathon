@@ -1,20 +1,11 @@
 import './App.css';
+import './components/packageCard/packageCard';
+import PackageCard from './components/packageCard/packageCard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PackageCard />
     </div>
   );
 }
