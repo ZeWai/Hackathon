@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClock, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 export default function PackageCard(props) {
 
@@ -11,8 +13,8 @@ export default function PackageCard(props) {
                 <Card.Body className="text-center">
                     <Card.Title><h3>{props.title}</h3></Card.Title>
                     <Card.Text>
-                        <i class="far fa-clock"></i><p>Start Planting: {props.startPlanting}</p>
-                        <i class="far fa-clock"></i><p>Ready By: {props.readyBy}</p>
+                        <p className=''><FontAwesomeIcon icon={faTimes} />Start Planting: {props.startPlanting}</p>
+                        <p className=''><FontAwesomeIcon icon={faClock} />Ready By: {props.readyBy}</p>
                     </Card.Text>
                     <Button variant="primary">Go somewhere</Button>
                 </Card.Body>
