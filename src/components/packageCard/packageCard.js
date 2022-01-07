@@ -3,7 +3,6 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
 export default function PackageCard(props) {
-
     return (
         <>
             <Card style={{ width: '18rem' }}>
@@ -11,10 +10,10 @@ export default function PackageCard(props) {
                 <Card.Body className="text-center">
                     <Card.Title><h3>{props.title}</h3></Card.Title>
                     <Card.Text>
-                        <i class="far fa-clock"></i><p>Start Planting: {props.startPlanting}</p>
-                        <i class="far fa-clock"></i><p>Ready By: {props.readyBy}</p>
+                        <i className="far fa-clock"></i><p>Start Planting: {props.startPlanting}</p>
+                        <i className="far fa-clock"></i><p>Ready By: {props.readyBy}</p>
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Button variant="primary">View Package</Button>
                 </Card.Body>
             </Card>
         </>
