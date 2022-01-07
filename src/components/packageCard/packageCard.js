@@ -1,10 +1,22 @@
 import { useState } from 'react';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
-export default function PackageCard() {
+export default function PackageCard(props) {
 
     return (
         <>
-          <p>were ready to go</p>
+            <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src={props.image} />
+                <Card.Body className="text-center">
+                    <Card.Title><h3>{props.title}</h3></Card.Title>
+                    <Card.Text>
+                        <i class="far fa-clock"></i><p>Start Planting: {props.startPlanting}</p>
+                        <i class="far fa-clock"></i><p>Ready By: {props.readyBy}</p>
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                </Card.Body>
+            </Card>
         </>
-      );
+    );
 }
