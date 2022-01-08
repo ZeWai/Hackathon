@@ -1,0 +1,11 @@
+.chart{
+    width: 74%;
+    border: 2px black solid;
+    float: left;
+}
+.step2{
+    width: 24%;
+    border: 2px black solid;
+    float: right;
+    
+}

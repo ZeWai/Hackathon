@@ -2,7 +2,7 @@
 // import Card from 'react-bootstrap/Card';
 // import Button from 'react-bootstrap/Button';
 
-import PackageCard from "./packageCard/packageCard";
+import PackageCard from "./PackageCard/PackageCard";
 
 export default function Packages(props) {
     const cards = props.flowers.map(flower => (
