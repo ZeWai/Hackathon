@@ -3,6 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faTimes } from '@fortawesome/free-solid-svg-icons';
+import PackageModal from '../packagemodal/PackageModal'
 
 export default function PackageCard(props) {
     return (

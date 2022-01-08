@@ -1,6 +1,7 @@
-import { Modal, Button } from "react-bootstrap";
+import { Modal, Button, Row, Col, Container, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState } from "react";
+import "./PackageModal.css";
 
 const PackageModal = (props) => {
   const [show, setShow] = useState(false);
@@ -10,22 +11,41 @@ const PackageModal = (props) => {
   return (
     <div>
       <Button variant="primary" onClick={handleShow}>
-        Launch Bootstrap Modal
+        View Package
       </Button>
 
-      <Modal show={show} onHide={handleClose} centered>
-        <Modal.Header closeButton>
-          <Modal.Title>Heading Text</Modal.Title>
-        </Modal.Header>
+      <Modal show={show} onHide={handleClose} centered size="lg">
+        <Modal.Body>
+          <Container class="container-fluid">
+            <Row>
+              <Col md={7}>
+                
+                  <div class="modal1">
+                    <Modal.Title class="text1">
+                      <p>Step 1: Pick your choice</p>
+                    </Modal.Title>
+                    <p class ="text2">{props.title}</p>
+                    <p class="text3">
+                      Pick the flowers you would like to plan for your event
+                    </p>
+                  </div>
+                  <Container class="container-fluid">
+                    <div></div>
 
-        <Modal.Body>Modal content will sit here</Modal.Body>
+                  </Container>
+
+                
+              </Col>
+              <Col md={5}>
+                <Image src={props.image} fluid />
+              </Col>
+            </Row>
+          </Container>
+        </Modal.Body>
 
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
           <Button variant="primary" onClick={handleClose}>
-            Submit
+            View on Chart
           </Button>
         </Modal.Footer>
       </Modal>
