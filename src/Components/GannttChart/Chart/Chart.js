@@ -21,12 +21,13 @@ ChartJS.register(
   Tooltip,
   Legend
 );
-
+const today = new Date();
+var date =(today.getMonth() + 1) + "-" + today.getDate();
 export const options = {
-  indexAxis: 'y',
-  barPercentage: .3,
-  categoryPercentage: 1,
-  borderColor: 'rgba(255,255,255,0)',
+  indexAxis: "y",
+  barPercentage: 0.55,
+  categoryPercentage: 0.8,
+  borderColor: "rgba(255,255,255,0)",
   elements: {
     bar: {
       borderWidth: 1,
@@ -37,14 +38,29 @@ export const options = {
       stacked: true,
       max: 30,
       title: {
-        display:true,
+        display: true,
         text: "Date",
       },
-      labels: {
-      }
-    }, y: {
+      labels: {},
+      ticks: {
+        min: 0,
+        stepSize: 1,
+        suggestedMin: date,
+        callback: function (label, index, labels) {
+          switch (label) {
+            case 0:
+              return date;
+            case label:
+              date = today.getMonth() + 1 + "-" + (today.getDate() + label);
+              return date;
+          }
+        },
+      },
     },
+    y: {
+      angleLines: { display: false },
     },
+  },
   plugins: {
     legend: {
       display: false,
@@ -53,8 +69,8 @@ export const options = {
       display: false,
     },
     tooltip: {
-      enabled: false
-    }
+      enabled: false,
+    },
   },
 };
 
@@ -67,7 +83,7 @@ const data = {
     stack: 'Stack 0',
             
         },{
-            data: [0,6,0,0],
+            data: [0,6,9,0],
             backgroundColor: 'rgba(255, 255, 255,0)',
             stack: 'Stack 0',
         },{
