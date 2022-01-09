@@ -14,7 +14,7 @@ export default function PackageCard(props) {
                     <Card.Img  className={styles.cardImg} variant="top" src={props.image} />
                     <h3 className={styles.label}>{props.label}</h3>
                     <Card.Body>
-                        <Card.Title className="text-center"><h3>{props.title}</h3></Card.Title>
+                        <Card.Title className="eventName text-center"><h3>{props.title}</h3></Card.Title>
                         <Card.Text>
                             <p className={styles.cardDetails}><FontAwesomeIcon icon={faTimes} />Start Planting: <span className='detailDate'>{props.startPlanting}</span></p>
                             <p className={styles.cardDetails}><FontAwesomeIcon icon={faClock} />Ready By: <span className='detailDate'>{props.readyBy}</span></p>

@@ -63,7 +63,7 @@ export default function Upcoming() {
       </div>
 
       <div className='row'>
-        <input value={"search"}></input>
+        <input type="text" value="search"></input>
         <button>stuff</button>
       </div>
 
