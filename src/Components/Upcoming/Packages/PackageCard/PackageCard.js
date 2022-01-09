@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faTimes } from '@fortawesome/free-solid-svg-icons';
 import styles from './Upcoming.module.css';
 
+import PackageModal from '../packagemodal/PackageModal'
 
 export default function PackageCard(props) {
     if(props.label == 'Event') {
