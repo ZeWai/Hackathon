@@ -1,11 +1,11 @@
 .chart{
-    width: 74%;
-    border: 2px black solid;
+    width: 65%;
+    height: 600px;
     float: left;
+    overflow: auto;
 }
 .step2{
-    width: 24%;
-    border: 2px black solid;
+    width: 33%;
     float: right;
     
 }

@@ -1,5 +1,4 @@
 .content{
-  border:2px black solid;
   margin: 5% 2.5%;
   height: 80vh;
 }
@@ -10,4 +9,5 @@
 
 .name {
   color: #265769;
+  font-weight: bold;
 }
