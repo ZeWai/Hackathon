@@ -1,0 +1,11 @@
+.chart{
+    width: 65%;
+    height: 600px;
+    float: left;
+    overflow: auto;
+}
+.step2{
+    width: 33%;
+    float: right;
+    
+}

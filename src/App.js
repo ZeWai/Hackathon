@@ -1,7 +1,6 @@
-import './App.css';
-import './components/packageCard/packageCard';
-import PackageCard from './components/packageCard/packageCard';
-import Packages from './components/packages';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import GanttChart from './Components/GannttChart/GanttChart';
+import Upcoming from './Components/Upcoming/Upcoming';
 
 function App() {
 
@@ -59,22 +58,14 @@ function App() {
 
 
   return (
-    <div className="container">
-
-      <div className="row text-center">
-        <h1 className="title">Upcoming.</h1>
-        <p className="slogan">Recommendations made just for you</p>
-      </div>
-
-      <div className='row'>
-        <input value={"search"}></input>
-        <button>stuff</button>
-      </div>
-
-      <div className="container">
-        <Packages flowers={flowers}/>
-      </div>
-    </div>
+    <BrowserRouter>
+      
+      <Routes>
+        <Route path='/' element={<Upcoming/>}/>
+        <Route path='/ganttchart' element={<GanttChart />} />
+        <Route path='*' element={<Upcoming />}/>
+        </Routes>
+      </BrowserRouter>
   );
 }
 

@@ -1,0 +1,13 @@
+.content{
+  margin: 5% 2.5%;
+  height: 80vh;
+}
+.smalltext {
+  color: rgba(120, 128, 133, 0.75);
+  font-size: 13px;
+}
+
+.name {
+  color: #265769;
+  font-weight: bold;
+}
