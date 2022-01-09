@@ -29,10 +29,11 @@ const PackageModal = (props) => {
                       Pick the flowers you would like to plan for your event
                     </p>
                   </div>
-                  <Container class="container-fluid">
-                    <div></div>
-
-                  </Container>
+                  <div class="container vertical-scrollable">
+                    <div class="row text-center">
+                      
+                    </div>
+                  </div>
 
                 
               </Col>
