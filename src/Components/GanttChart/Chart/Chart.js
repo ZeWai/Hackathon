@@ -38,7 +38,7 @@ export const options = {
   scales: {
     x: {
       stacked: true,
-      max: 20,
+      max: 18,
       title: {
         display: true,
         text: "Date",
@@ -64,7 +64,10 @@ export const options = {
       },
     },
     y: {
-       grid:{display:false}
+       grid:{display:false},
+       ticks:{
+         color: '#42C1C6',
+       }
     },
   },
   plugins: {
