@@ -3,7 +3,6 @@
 // import Button from 'react-bootstrap/Button';
 
 import PackageCard from "./PackageCard/PackageCard";
-// import PackageModal from "./packagemodal/PackageModal"
 
 export default function Packages(props) {
     const cards = props.flowers.map(flower => (
@@ -11,10 +10,9 @@ export default function Packages(props) {
             <PackageCard
                 {...flower}
             />
-            {/* <Packages {...flower} /> */}
         </div>
-    ))
 
+    ))
 
     return (
         <>

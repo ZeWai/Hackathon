@@ -20,3 +20,17 @@
 .text3 {
     font-size: 12px;
 }
+
+.border {
+    border: 1px solid black;
+    height: 82px;
+    width: 389px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    padding: 0px,
+    0px,
+    0px,
+    16px;
+
+}

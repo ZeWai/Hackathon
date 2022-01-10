@@ -1,11 +1,36 @@
-.chart{
-    width: 65%;
-    height: 600px;
-    float: left;
-    overflow: auto;
+.chart {
+  width: 65%;
+  height: 600px;
+  float: left;
+  overflow: auto;
 }
-.step2{
-    width: 33%;
-    float: right;
-    
+.step2 {
+  margin: 30px 20px 0 0;
+  width: 33%;
+  float: right;
+}
+.heading {
+  font-family: "DIN 2014";
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 39px;
+}
+ul.label li {
+  display: inline;
+  float: right;
+  padding: 0 10px;
+}
+
+.dot {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.des {
+  font-family: "DIN 2014";
+  font-weight: bold;
+  color: #265769;
+  font-size: 22px;
+  line-height: 29px;
 }
