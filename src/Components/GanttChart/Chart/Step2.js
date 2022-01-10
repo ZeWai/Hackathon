@@ -4,7 +4,7 @@ import Accordion from 'react-bootstrap/Accordion'
 export default function Step2() {
     return (
         <div className={styles.step2}>
-            <Accordion flush>
+            <Accordion flush className={styles.accordion}>
   <Accordion.Item eventKey="0">
     <Accordion.Header>Fruit Bearing</Accordion.Header>
     <Accordion.Body>

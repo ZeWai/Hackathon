@@ -62,19 +62,14 @@ function App() {
     }
 ]
 
-
-
-
-
-
-
-
   return (
     <BrowserRouter>
       
       <Routes>
         <Route path='/' element={<Upcoming/>}/>
-        <Route path='/ganttchart' element={<GanttChart />} />
+        <Route path='/ganttchart' element={<GanttChart />} >
+          <Route path=':id' element={<GanttChart/>}/>
+        </Route>
         <Route path='*' element={<Upcoming />}/>
         </Routes>
       </BrowserRouter>
