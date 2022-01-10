@@ -1,13 +1,13 @@
 // import './App.css';
 // import './components/packageCard/packageCard';
-import './Components/Upcoming/Packages/PackageCard/PackageCard'
+import './components/Upcoming/Packages/PackageCard/PackageCard'
 // import PackageCard from './components/packageCard/packageCard';
 // import Packages from './components/packages';
 // import PackageModal from './components/packagemodal/PackageModal';
 import React from 'react';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import GanttChart from './Components/GanttChart/GanttChart';
-import Upcoming from './Components/Upcoming/Upcoming';
+import GanttChart from './components/GanttChart/GanttChart';
+import Upcoming from './components/Upcoming/Upcoming';
 
 
 function App() {
