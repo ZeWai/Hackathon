@@ -7,7 +7,7 @@ import PackageCard from "./PackageCard/PackageCard";
 
 export default function Packages(props) {
     const cards = props.flowers.map(flower => (
-        <div className="col-4">
+        <div className="col-4 my-5">
             <PackageCard
                 {...flower}
             />
@@ -17,8 +17,8 @@ export default function Packages(props) {
 
 
     return (
-        <div className="row">
+        <>
             {cards}
-        </div>
+        </>
     );
 }
